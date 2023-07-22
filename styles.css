@@ -69,6 +69,7 @@ body {
   .page-container {
     display: flex;
     flex-direction: column;
+    margin-top: -40px;
   }
 
   .intro-paragraph {
@@ -178,7 +179,7 @@ body {
 
     text-align: left;
     margin-left: 315px;
-    margin-top: -275px;
+    margin-top: -255px;
     margin-bottom: 80px;
   }
   

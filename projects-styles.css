@@ -1,0 +1,281 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #84B5E8;
+}
+
+/* Header */
+
+header {
+    background-color: white;
+    height: 64px;
+    display: flex;
+    align-items: center;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+  nav {
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: white;
+    height: 80px;
+    width: 100%;
+  }
+  
+  label.my-name {
+    font-size: 32px;
+    line-height: 70px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    padding: 7px, 13px;
+    border-radius: 3px;
+  }
+  
+  nav ul li a {
+    color: black;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+  }
+  
+  .checkbtn {
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  @media(max-width: 1350px) {
+    label.my-name {
+      font-size: 16px;
+      padding-left: 50px;
+    }
+  
+    nav ul li a {
+      font-size: 16px;
+      padding-bottom: 100px;
+  
+    }
+  }
+  
+  @media(max-width: 1150px) {
+    .checkbtn {
+      display: block;
+    }
+  
+    ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-color: #84B5E8;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  
+    }
+  
+    nav ul li a {
+      font-size: 16px;
+    }
+  
+    a:hover, a.active {
+      background: none;
+      color: black;
+    }
+  
+    #check:checked~ul {
+      left: 0;
+  
+    }
+  }
+  
+  
+  /*  */
+  footer {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: #999999;
+  }
+  
+  .social-icons img {
+    margin: 0 10px;
+    flex: 1;
+  }
+  
+  .instagram {
+    background-color: white;
+    padding-top: 2px;
+  }
+  
+  .linkedin {
+    padding-top: 5px;
+  
+  }
+  
+  .social-icons img.move-left {
+    margin-left: -10px;
+  
+  }
+
+.project-section {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    font-weight: none;
+
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.project-section {
+    background-color: #84B5E8;
+    padding: 50px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: none;
+
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+    margin: 0 auto;
+    max-width: 80%; 
+    font-size: 18px;
+    font-family: "Open Sans Condensed", sans-serif;
+    color: white;
+    line-height: 1.25;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: normal;
+    line-height: 1.2;
+
+}
+
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.project img {
+    width: 150px;
+    height: 150px;
+    height: auto;
+    margin-bottom: 0px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.project h3 {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.project h5{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+
+.intro {
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+    font-stretch: condensed;
+    color: rgb(0, 0, 0);
+    margin-bottom: -20px;
+
+}
+
+a:hover {
+    font-weight: bold;
+  }

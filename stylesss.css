@@ -1,0 +1,375 @@
+/* @media (min-width: 1000px) and (max-width: 3500px) { */
+
+
+
+  /* Body */
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #84B5E8;
+  }
+
+  .introduction {
+    text-align: left;
+    padding-left: 275px;
+    margin-top: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: slide-in 2.5s linear 1;
+    position: relative;
+    left: 0;
+  }
+
+  .intro-text h1 span {
+    display: inline-block;
+    opacity: 0;
+    animation: word-fade-in 1s ease-in-out forwards;
+  }
+
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes word-fade-in {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+  .intro-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px;
+    font-weight: 900;
+    font-stretch: condensed;
+    color: rgb(0, 0, 0);
+    margin-top: 40px;
+  }
+
+
+  .page-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro-paragraph {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 32px;
+    color: white;
+    line-height: 1.5;
+    overflow: hidden;
+    animation: slide-in 2.5s linear 1;
+    margin-top: 50px;
+    position: relative;
+    left: 0;
+  }
+
+  .intro-text h1 span {
+    display: inline-block;
+    opacity: 0;
+    animation: word-fade-in 1s ease-in-out forwards;
+  }
+
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes word-fade-in {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .paragraph-container {
+    text-align: left;
+    margin-left: 175px;
+    margin-top: -425px;
+    margin-bottom: 300px;
+  }
+
+
+  .highlight {
+    color: #A0F8C4;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: calc(25% - 213.375px);
+    margin-top: 20px;
+  }
+
+  .me {
+    width: 426.75px;
+    height: 535.5px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: -150px;
+  }
+
+  .me img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: ellipse(50% 50% at 50% 50%);
+    transform: translateX(100%);
+    animation: slide-in-image 2s ease-in-out forwards;
+    animation-delay: 0.75s;
+  }
+
+  @keyframes slide-in-image {
+    0% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .button {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 30px;
+    border: 2px solid black;
+    border-radius: 4px;
+    color: black;
+    transition: background-color 0.3s;
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
+
+  .about-button {
+    background-color: #A0F8C4;
+    margin-right: 20px;
+  }
+
+  .contact-button {
+    background-color: #A0F8C4;
+  }
+
+  .button:hover {
+    background-color: #6BD6A8;
+  }
+
+  @keyframes slide-in-button {
+    0% {
+      transform: translateX(-500%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  /* Header */
+
+  header {
+    background-color: white;
+    height: 64px;
+    display: flex;
+    align-items: center;
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav {
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: white;
+    height: 80px;
+    width: 100%;
+}
+
+label.my-name {
+    font-size: 32px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    padding: 7px, 13px;
+    border-radius: 3px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media(max-width: 1350px) {
+    label.my-name {
+        font-size: 20px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+        padding-bottom: 100px;
+
+    }
+}
+
+@media(max-width: 1150px) {
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #84B5E8;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    a:hover, a.active{
+        background: none;
+        color: black;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+        
+    }
+}
+  
+
+  /*  */
+  footer {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+  .social-icons a:hover {
+    color: #999999;
+  }
+
+  .social-icons img {
+    margin: 0 10px;
+    flex: 1;
+  }
+
+  .instagram {
+    background-color: white;
+    padding-top: 2px;
+  }
+
+  .linkedin {
+    padding-top: 5px;
+
+  }
+
+  .social-icons img.move-left {
+    margin-left: -10px;
+
+  }
+
+/* } */

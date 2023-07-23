@@ -93,7 +93,7 @@ body {
 
   @keyframes slide-in {
     0% {
-      transform: translateX(-100%);
+      transform: translateX(-175%);
     }
 
     100% {
@@ -194,7 +194,7 @@ body {
     color: black;
     margin-right: 20px;
     margin-bottom: 30px;
-    transform: translateX(-400%); /* Start off the screen to the left */
+    transform: translateX(-450%); /* Start off the screen to the left */
     animation: slide-in-button 2.5s cubic-bezier(0.5, 0, 0.75, 0.5) forwards;
   }
   

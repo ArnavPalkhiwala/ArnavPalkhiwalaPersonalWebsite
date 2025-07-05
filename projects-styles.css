@@ -392,8 +392,8 @@ header {
     .project {
         padding: 20px;
     }
-    
-    .intro {
+
+.intro {
         font-size: 36px;
         padding-top: 30px;
     }
@@ -512,4 +512,4 @@ header {
     .project-section {
         padding: 10px 0 30px 0;
     }
-}
+  }

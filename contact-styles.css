@@ -215,3 +215,56 @@ footer {
   margin-left: -10px;
 
 }
+
+.contact-card {
+  background: #fff;
+  border-radius: 32px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+  max-width: 500px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 38px 48px 38px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.contact-heading {
+  text-align: center;
+  color: #3a3a3a;
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 22px;
+  letter-spacing: -1px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact-card .intro-paragraph {
+  text-align: center;
+  font-size: 1.18rem;
+  line-height: 1.8;
+  margin-top: 10px;
+  color: #222;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.contact-keyword {
+  color: #84B5E8;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .contact-card {
+    padding: 18px 32px 18px 32px;
+    max-width: 85vw;
+    border-radius: 18px;
+  }
+  .contact-heading {
+    font-size: 1.4rem;
+  }
+  .contact-card .intro-paragraph {
+    font-size: 1rem;
+  }
+}

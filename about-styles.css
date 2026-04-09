@@ -339,3 +339,139 @@ footer {
     font-size: 1rem;
   }
 }
+
+/* Timeline */
+.timeline-section {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 24px auto;
+}
+
+.timeline-heading {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 24px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.timeline-heading-accent {
+  color: #fff;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 28px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 6px;
+  bottom: 6px;
+  width: 3px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -24px;
+  top: 18px;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border: 3px solid #84B5E8;
+  border-radius: 50%;
+}
+
+.timeline-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+  padding: 16px 22px;
+}
+
+.timeline-card-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+.timeline-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  object-fit: contain;
+  background: #f4f4f4;
+  border: 1px solid #eee;
+  flex-shrink: 0;
+  padding: 4px;
+}
+
+.timeline-card-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.timeline-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 2px;
+}
+
+.timeline-company {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #84B5E8;
+}
+
+.timeline-date {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.82rem;
+  color: #888;
+  font-weight: 600;
+}
+
+.timeline-role {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.timeline-desc {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.55;
+}
+
+@media (max-width: 700px) {
+  .timeline-section {
+    max-width: 85vw;
+  }
+  .timeline-meta {
+    flex-direction: column;
+    gap: 2px;
+  }
+}

@@ -1,299 +1,193 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Projects</title>
+    <title>Projects | Arnav Palkhiwala</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Projects and research by Arnav Palkhiwala | ML systems, AI benchmarking, and web applications.">
+    <meta property="og:title" content="Projects | Arnav Palkhiwala">
+    <meta property="og:description" content="ML systems, AI benchmarking, and web applications by Arnav Palkhiwala.">
+    <meta property="og:image" content="https://arnavpalkhiwala.com/images/me/me.jpg">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" type="text/css" href="projects-styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="images/me/ap-logo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/me/ap-logo.png">
-
 </head>
 
 <body>
     <header>
-        <nav>
-            <input type = "checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class = "fas fa-bars"></i>
+        <nav aria-label="Main navigation">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
             </label>
-            <label class="my-name" ><a href="index.html" style="color: black;">Arnav Palkhiwala </a></label>
+            <label class="my-name"><a href="index.html">Arnav Palkhiwala</a></label>
             <ul>
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="https://drive.google.com/file/d/1LsZClxZihLj1knwgl3SIkXcG1QeuuQm8/view?usp=sharing" target="_blank">Resume</a></li>
+                <li><a class="active" href="projects.html">Projects</a></li>
+                <li><a href="https://drive.google.com/file/d/1LsZClxZihLj1knwgl3SIkXcG1QeuuQm8/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
-    
             </ul>
         </nav>
-        </header>
+    </header>
 
     <div class="top-section">
-        <div class="projects-icon">
-            <i class="fas fa-laptop-code"></i>
-        </div>
         <h1 class="intro">My Projects</h1>
-        <h2 class="section-heading">  
-            Throughout high school and as a student at the University of Washington, I have had the opportunity to contribute to numerous projects surrounding programming and technology.
-             Here are some of my more recent ones. The rest can be found on my <a href="https://github.com/ArnavPalkhiwala" style="color: white; text-decoration: underline;"> Github (linked here)</a>.
-        </h2>
+        <p class="section-heading">
+            Work I've built and research I've contributed to. More on my <a href="https://github.com/ArnavPalkhiwala" target="_blank" rel="noopener noreferrer">GitHub</a>.
+        </p>
     </div>
 
-    <section id="projects" class="project-section">
-        <div class="project-container">
-            <div class="project">
-                <img src="images/projects/Fastbreak.jpg" alt="FastBreak">
+    <main class="project-section">
 
-                <h3>FastBreak - AI Powered Sports Newsletter</h3>
+        <!-- Research -->
+        <div class="project-group">
+            <h2 class="group-heading"><i class="fas fa-flask"></i> Research</h2>
+            <div class="project-container">
 
-                <div class="tech-stack">
-                    <span class="tech-tag">Google Gemini API</span>
-                    <span class="tech-tag">Firebase</span>
-                    <span class="tech-tag">News API</span>
-                    <span class="tech-tag">Google Cloud</span>
-                    <span class="tech-tag">TypeScript</span>
-                </div>
-
-                <div class="project-description">
-                    <h5>A fully live, AI-powered sports newsletter covering <b>5+ leagues</b>: NBA, NFL, MLB, NHL, NCAAF, NCAAM, Tennis, and Golf. Pick up to 6 favorite teams and our AI scans thousands of sources daily to pull only the stories relevant to your teams. Get a clean, personalized digest delivered to your inbox every morning with no fluff, no irrelevant scores, and no noise. Built for fans who want to stay informed without spending time sifting through articles. Free forever, unsubscribe anytime.</h5>
-                </div>
-
-                <div class="project-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">AI</span>
-                        <span class="stat-label">Powered</span>
+                <div class="project reveal" data-delay="0">
+                    <img src="images/projects/infoseeking.png" alt="InfoSeeking Lab">
+                    <h3>iAgentBench, UW InfoSeeking Lab</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">LLM Agentic Systems</span>
+                        <span class="tech-tag">RAG</span>
+                        <span class="tech-tag">Benchmarking</span>
+                        <span class="tech-tag">Ollama</span>
+                        <span class="tech-tag">Python</span>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">Personalized</span>
-                        <span class="stat-label">Content</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">Match</span>
-                        <span class="stat-label">Your Schedule</span>
+                    <p class="project-desc">
+                        Published <em>iAgentBench</em> at SIGIR 2026 (under Professor Chirag Shah), a benchmark evaluating how AI agents reason across multi-source, fast-changing information environments. Also optimized and containerized <strong>Dynamic-KGQA</strong> (SIGIR 2025) for local Ollama deployment, enabling multi-model LLM QA generation from dynamic subgraphs on limited compute.
+                    </p>
+                    <div class="project-links-row">
+                        <a href="https://arxiv.org/abs/2603.04656" target="_blank" rel="noopener noreferrer" class="project-link">Paper</a>
+                        <a href="https://infoseeking.org/" target="_blank" rel="noopener noreferrer" class="project-link project-link-outline">Lab Website</a>
                     </div>
                 </div>
 
-                <a href="https://sports-newsletter-three.vercel.app/" target="_blank" class="project-link">Sign Up and Join Today!</a>
+                <div class="project reveal" data-delay="100">
+                    <h3>Gaussian Processes for ML</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">R</span>
+                        <span class="tech-tag">Statistics</span>
+                        <span class="tech-tag">Machine Learning</span>
+                    </div>
+                    <p class="project-desc">
+                        Directed Reading Program with the UW Department of Statistics. Collaborated with a PhD student to learn and apply Gaussian Processes for supervised machine learning on labeled datasets.
+                    </p>
+                    <div class="project-meta-row">
+                        <span class="project-meta-chip">UW Statistics</span>
+                        <span class="project-meta-chip">PhD Collaboration</span>
+                        <span class="project-meta-chip">Autumn 2024</span>
+                    </div>
+                    <div class="project-links-row">
+                        <a href="https://drive.google.com/file/d/1OuVQReIJ3qvZO07UGisyU4j3boFYRsXI/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-link">View Research</a>
+                    </div>
+                </div>
+
             </div>
-
-            <!-- InfoSeeking Lab Research Card -->
-            <div class="project">
-                <img src="images/projects/infoseeking.png" alt="InfoSeeking Lab" style="background:#f5faff;">
-                <h3> Research Assistant @ University of Washington InfoSeeking Lab</h3>
-                <div class="tech-stack">
-                    <span class="tech-tag">LLM Agentic Systems</span>
-                    <span class="tech-tag">RAG</span>
-                    <span class="tech-tag">Benchmarking</span>
-                    <span class="tech-tag">Evaluation</span>
-                    <span class="tech-tag">Ollama</span>
-                    <span class="tech-tag">Information Retrieval</span>
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Research</span>
-                </div>
-                <div class="project-description">
-                    <h5>
-                        Published <a href="https://arxiv.org/abs/2603.04656" target="_blank" style="color:inherit;"><i style="font-weight:800;">iAgentBench</i></a> (SIGIR 2026, under Professor Chirag Shah), a benchmark for evaluating how AI agents make sense of information on high-traffic, fast-changing topics, going beyond simple retrieval to require real multi-source reasoning.
-                        Also, optimized and containerized <b>Dynamic-KGQA</b> (SIGIR 2025) 
-                        for local Ollama deployment, enabling multi-model LLM QA generation & verification from dynamic
-                        subgraphs on limited CPU/GPU compute.
-                    </h5>
-                </div>
-                <div class="project-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">SIGIR</span>
-                        <span class="stat-label">2026</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">Paper</span>
-                        <span class="stat-label">Published</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">AI</span>
-                        <span class="stat-label">Agents</span>
-                    </div>
-                </div>
-                <div style="display:flex; gap:10px; flex-wrap:wrap;">
-                    <a href="https://arxiv.org/abs/2603.04656" target="_blank" class="project-link">iAgentBench Paper</a>
-                    <a href="https://infoseeking.org/" target="_blank" class="project-link">Lab Website</a>
-                </div>
-            </div>
-            <!-- End InfoSeeking Lab Research Card -->
-
-            <div class="project">
-                <h3>Gaussian Processes for Machine Learning</h3>
-
-                <div class="tech-stack">
-                    <span class="tech-tag">R Programming</span>
-                    <span class="tech-tag">Statistics</span>
-                    <span class="tech-tag">Machine Learning</span>
-                    <span class="tech-tag">Research</span>
-                </div>
-
-                <div class="project-description">
-                    <h5>Research conducted through a Directed Reading Program with the UW Department of Statistics. 
-                    Collaborated with a PhD student to learn and apply the principles of Gaussian Processes to analyze labeled
-                    datasets in the context of Supervised Machine Learning.</h5>
-                </div>
-
-                <div class="project-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">UW</span>
-                        <span class="stat-label">Research</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">PhD</span>
-                        <span class="stat-label">Collaboration</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">Autumn</span>
-                        <span class="stat-label">2024</span>
-                    </div>
-                </div>
-
-                <a href="https://drive.google.com/file/d/1OuVQReIJ3qvZO07UGisyU4j3boFYRsXI/view?usp=sharing" target="_blank" class="project-link">View Research</a>
-            </div>
-
-            <div class="project">
-                <img src="images/projects/timesync.png" alt="TimeSync">
-
-                <h3>TimeSync - Group Scheduling</h3>
-
-                <div class="tech-stack">
-                    <span class="tech-tag">React.js</span>
-                    <span class="tech-tag">Google Calendar API</span>
-                    <span class="tech-tag">Firebase</span>
-                    <span class="tech-tag">JavaScript</span>
-                </div>
-
-                <div class="project-description">
-                    <h5>Web application allowing groups to find common availability based on their free times by inputting Google Calendar links. 
-                    Utilizes Google Calendar API and Firebase database to collect and store free times along with React.js frontend.</h5>
-                </div>
-
-                <img src="images/projects/timesync2.png" alt="TimeSync Interface" style="margin-top: 15px;">
-
-                <div class="project-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">Group</span>
-                        <span class="stat-label">Scheduling</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">Calendar</span>
-                        <span class="stat-label">Integration</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">Real-time</span>
-                        <span class="stat-label">Sync</span>
-                    </div>
-                </div>
-
-                <a href="https://timesync-7171d.firebaseapp.com/" target="_blank" class="project-link">Live Demo</a>
-            </div>
-    
-            <div class="project">
-                <img src="images/projects/calculator.png" alt="Doxxing Calculator">
-
-                <h3>Doxxing Calculator</h3>
-
-                <div class="tech-stack">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Web Scraping</span>
-                    <span class="tech-tag">Twitter API</span>
-                    <span class="tech-tag">Security</span>
-                </div>
-
-                <div class="project-description">
-                    <h5>This project is made to check whether someone can be doxxed or not. The program checks if any important information that you have has been posted on Twitter and lets you know.</h5>
-                </div>
-
-                <div class="project-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">Privacy</span>
-                        <span class="stat-label">Protection</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">Social</span>
-                        <span class="stat-label">Media Scan</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">Security</span>
-                        <span class="stat-label">Tool</span>
-                    </div>
-                </div>
-
-                <a href="https://github.com/LEAGUE-Level7/SeaBass" target="_blank" class="project-link">View Code</a>
-            </div>
-
-            <div class="project">
-                <img src="images/projects/spotify.png" alt="SpotiStats">
-                <h3>SpotiStats</h3>
-                <div class="tech-stack">
-                    <span class="tech-tag">Spotify API</span>
-                    <span class="tech-tag">Data Analysis</span>
-                    <span class="tech-tag">Web Development</span>
-                    <span class="tech-tag">Analytics</span>
-                </div>
-
-                <div class="project-description">
-                    <h5>A website to get comprehensive statistics about your Spotify playlists, including listening patterns, favorite artists, and music insights.</h5>
-                </div>
-
-                <div class="project-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">Music</span>
-                        <span class="stat-label">Analytics</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">Playlist</span>
-                        <span class="stat-label">Insights</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">Data</span>
-                        <span class="stat-label">Visualization</span>
-                    </div>
-                </div>
-
-                <a href="https://github.com/raad1masum/SpotiStats" target="_blank" class="project-link">View Code</a>
-            </div>
-
         </div>
 
-    </section>
+        <!-- Projects -->
+        <div class="project-group">
+            <h2 class="group-heading"><i class="fas fa-code"></i> Projects</h2>
+            <div class="project-container">
+
+                <div class="project reveal" data-delay="0">
+                    <img src="images/projects/Fastbreak.jpg" alt="FastBreak">
+                    <h3>FastBreak, AI Sports Newsletter</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Gemini API</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">News API</span>
+                        <span class="tech-tag">Google Cloud</span>
+                        <span class="tech-tag">TypeScript</span>
+                    </div>
+                    <p class="project-desc">
+                        Fully live AI-powered sports newsletter covering 5+ leagues. Pick up to 6 favorite teams and get a personalized daily digest with no noise or irrelevant scores. Live with 20+ daily active users. Free forever.
+                    </p>
+                    <div class="project-links-row">
+                        <a href="https://sports-newsletter-three.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">Sign Up!</a>
+                    </div>
+                </div>
+
+                <div class="project reveal" data-delay="100">
+                    <img src="images/projects/timesync.png" alt="TimeSync">
+                    <h3>TimeSync, Group Scheduling</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Google Calendar API</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <p class="project-desc">
+                        Web app that finds common availability for groups by reading Google Calendar links. Stores and compares free times in real time with a React frontend.
+                    </p>
+                    <div class="project-links-row">
+                        <a href="https://timesync-7171d.firebaseapp.com/" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project reveal" data-delay="200">
+                    <img src="images/projects/spotify.png" alt="SpotiStats">
+                    <h3>SpotiStats</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Spotify API</span>
+                        <span class="tech-tag">Data Analysis</span>
+                        <span class="tech-tag">Web Development</span>
+                    </div>
+                    <p class="project-desc">
+                        Comprehensive statistics for your Spotify playlists: listening patterns, favorite artists, and music insights.
+                    </p>
+                    <div class="project-links-row">
+                        <a href="https://github.com/raad1masum/SpotiStats" target="_blank" rel="noopener noreferrer" class="project-link project-link-outline">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project reveal" data-delay="300">
+                    <img src="images/projects/calculator.png" alt="Doxxing Calculator">
+                    <h3>Doxxing Calculator</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Web Scraping</span>
+                        <span class="tech-tag">Twitter API</span>
+                    </div>
+                    <p class="project-desc">
+                        Privacy tool that checks whether personal information has been exposed on Twitter, helping users understand and reduce their digital footprint.
+                    </p>
+                    <div class="project-links-row">
+                        <a href="https://github.com/LEAGUE-Level7/SeaBass" target="_blank" rel="noopener noreferrer" class="project-link project-link-outline">GitHub</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
 
     <footer>
         <div class="footer-container">
             <div class="social-icons">
-                <a href="https://github.com/ArnavPalkhiwala" target="_blank">
-                    <img src="images/icons/github.png" alt="Github" width="60" height="60">
+                <a href="https://github.com/ArnavPalkhiwala" target="_blank" rel="noopener noreferrer" aria-label="Arnav on GitHub">
+                    <i class="fab fa-github"></i>
                 </a>
-
-                <div class="linkedin">
-                    <a href="https://www.linkedin.com/in/arnav-palkhiwala-a8927b212/" target="_blank">
-                        <img src="images/icons/linkedin.png" alt="Linkedin" width="50" height="50">
-                    </a>
-
-                </div>
-
-                <div target="_blank" style="padding-right: 10px">
-                    <a href="https://www.instagram.com/arnav__palkhiwala/" target="_blank">
-                        <img src="images/icons/instagram.jpg" alt="Instagram" width="60" height="60">
-                    </a>
-
-                </div>
-
-                <a class="mail" href=mailto:palkhiwala.arnav@gmail.com>
-                    <img src="images/icons/email.png" alt="E-Mail" class="move-left" width="50" height="60">
+                <a href="https://www.linkedin.com/in/arnav-palkhiwala-a8927b212/" target="_blank" rel="noopener noreferrer" aria-label="Arnav on LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
                 </a>
-
+                <a href="https://www.instagram.com/arnav__palkhiwala/" target="_blank" rel="noopener noreferrer" aria-label="Arnav on Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:palkhiwala.arnav@gmail.com" aria-label="Email Arnav">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
-            <p>&copy; 2023 Arnav Palkhiwala</p>
+            <p>&copy; 2026 Arnav Palkhiwala</p>
         </div>
     </footer>
 
+    <script src="animations.js"></script>
 </body>
 
 </html>

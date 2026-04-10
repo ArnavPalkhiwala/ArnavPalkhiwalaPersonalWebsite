@@ -1,113 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Arnav Palkhiwala</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Arnav Palkhiwala - Statistics and Data Science at UW. ML inference intern at Contextual AI and Qualcomm. SIGIR 2026 researcher.">
+    <meta property="og:title" content="Arnav Palkhiwala">
+    <meta property="og:description" content="Statistics and Data Science at UW. ML inference intern at Contextual AI and Qualcomm. SIGIR 2026 researcher.">
+    <meta property="og:image" content="https://arnavpalkhiwala.com/images/me/me.jpg">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="images/me/ap-logo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/me/ap-logo.png">
-
 </head>
 
 <body>
     <header>
-    <nav>
-        <input type = "checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class = "fas fa-bars"></i>
-        </label>
-        <label class="my-name" ><a href="index.html" style="color: black;">Arnav Palkhiwala </a></label>
-        <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="https://drive.google.com/file/d/1LsZClxZihLj1knwgl3SIkXcG1QeuuQm8/view?usp=sharing" target="_blank">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-
-        </ul>
-    </nav>
+        <nav aria-label="Main navigation">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="my-name"><a href="index.html">Arnav Palkhiwala</a></label>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="https://drive.google.com/file/d/1LsZClxZihLj1knwgl3SIkXcG1QeuuQm8/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <script>
-        function delayNavigation(event) {
-            event.preventDefault();
-
-            setTimeout(function () {
-                window.location.href = event.target.href;
-            }, 250);
-        }
-    </script>
 
     <div class="page-container">
         <div class="introduction">
-            <h1 class="intro-text">Hi, I'm Arnav <br> <span style="color:#84B5E8;">.</span> Palkhiwala</h1>
+            <h1 class="intro-text">Hi, I'm Arnav<br><span class="highlight">Palkhiwala</span></h1>
         </div>
-
-
 
         <div class="image-container">
             <div class="me">
-                <img src="images/me/me.jpg" alt="Arnav" width="50" height="50">
+                <img src="images/me/me.jpg" alt="Arnav Palkhiwala">
             </div>
-
         </div>
 
         <div class="paragraph-container">
             <p class="intro-paragraph">
-                I am a motivated Statistics and Data Science student at the <span class="highlight">University of
-                    Washington</span>.<br>
-                    <br>
-                My interests lie in <span class="highlight">programming</span>
-                and <span class="highlight">statistics</span>, and I hope to work at the intersection of <strong>data science  
-                </strong> and <strong> maching learning</strong>.
+                I'm a Statistics and Data Science student at the <span class="highlight">University&nbsp;of&nbsp;Washington</span>, focused on <span class="highlight">ML systems</span> and AI research.<br><br>
+                I've built ML systems at Contextual AI and Qualcomm, published agentic AI research at SIGIR 2026, and currently scout open-source AI with commercial potential at Atomic. I'm particularly excited about <span class="highlight">early-stage startups</span> and teams that move fast and iterate quickly.
             </p>
         </div>
 
-
         <div class="button-container">
-            <a href="about.html" class="button about-button">About</a>
-            <a href="contact.html" class="button contact-button">Contact</a>
+            <a href="projects.html" class="button">Projects</a>
+            <a href="https://drive.google.com/file/d/1LsZClxZihLj1knwgl3SIkXcG1QeuuQm8/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-outline">Resume</a>
         </div>
-
     </div>
 
     <footer>
         <div class="footer-container">
             <div class="social-icons">
-                <a href="https://github.com/ArnavPalkhiwala" target="_blank">
-                    <img src="images/icons/github.png" alt="Github" width="60" height="60">
+                <a href="https://github.com/ArnavPalkhiwala" target="_blank" rel="noopener noreferrer" aria-label="Arnav on GitHub">
+                    <i class="fab fa-github"></i>
                 </a>
-
-                <div class="linkedin">
-                    <a href="https://www.linkedin.com/in/arnav-palkhiwala-a8927b212/" target="_blank">
-                        <img src="images/icons/linkedin.png" alt="Linkedin" width="50" height="50">
-                    </a>
-
-                </div>
-
-                <div target="_blank" style="padding-right: 10px">
-                    <a href="https://www.instagram.com/arnav__palkhiwala/" target="_blank">
-                        <img src="images/icons/instagram.jpg" alt="Instagram" width="60" height="60">
-                    </a>
-
-                </div>
-
-                <a class="mail" href=mailto:palkhiwala.arnav@gmail.com >
-                    <img src="images/icons/email.png" alt="E-Mail" class="move-left" width="50" height="60">
+                <a href="https://www.linkedin.com/in/arnav-palkhiwala-a8927b212/" target="_blank" rel="noopener noreferrer" aria-label="Arnav on LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
                 </a>
-
+                <a href="https://www.instagram.com/arnav__palkhiwala/" target="_blank" rel="noopener noreferrer" aria-label="Arnav on Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:palkhiwala.arnav@gmail.com" aria-label="Email Arnav">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
-            <p>&copy; 2023 Arnav Palkhiwala</p>
+            <p>&copy; 2026 Arnav Palkhiwala</p>
         </div>
     </footer>
 
-        <script src="/script.js" defer></script>
-
-
+    <script src="animations.js"></script>
 </body>
 
 </html>

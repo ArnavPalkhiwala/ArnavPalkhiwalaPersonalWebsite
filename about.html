@@ -1,62 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>About Arnav</title>
+    <title>About | Arnav Palkhiwala</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Arnav Palkhiwala | Statistics and Data Science at UW, ML systems researcher, SIGIR 2026 author.">
+    <meta property="og:title" content="About | Arnav Palkhiwala">
+    <meta property="og:description" content="Statistics and Data Science at UW. ML inference intern at Contextual AI and Qualcomm. SIGIR 2026 researcher.">
+    <meta property="og:image" content="https://arnavpalkhiwala.com/images/me/me.jpg">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" type="text/css" href="about-styles.css" />
-    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="images/me/ap-logo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/me/ap-logo.png">
-
 </head>
 
 <body>
     <header>
-    <nav>
-        <input type = "checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class = "fas fa-bars"></i>
-        </label>
-        <label class="my-name" ><a href="index.html" style="color: black;">Arnav Palkhiwala </a></label>
-        <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="https://drive.google.com/file/d/1LsZClxZihLj1knwgl3SIkXcG1QeuuQm8/view?usp=sharing" target="_blank" onclick="delayNavigation(event)">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-
-        </ul>
-    </nav>
+        <nav aria-label="Main navigation">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="my-name"><a href="index.html">Arnav Palkhiwala</a></label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="https://drive.google.com/file/d/1LsZClxZihLj1knwgl3SIkXcG1QeuuQm8/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <script>
-        function delayNavigation(event) {
-            event.preventDefault();
+    <main class="about-center-layout">
 
-            setTimeout(function () {
-                window.location.href = event.target.href;
-            }, 250);
-        }
-    </script>
-
-    <div class="about-center-layout">
+        <!-- Profile -->
         <img src="images/me/me.jpg" alt="Arnav Palkhiwala" class="about-profile-pic-centered">
-        <div class="about-card">
+        <h1 class="about-name-header">Arnav Palkhiwala</h1>
+        <p class="about-title-line">ML Systems &middot; AI Research &middot; Data Science</p>
+
+        <!-- Bio -->
+        <div class="about-card reveal">
             <p class="about-text">
-                Hi, I am <span class="about-keyword">Arnav Palkhiwala</span>. Originally from San Diego, I am currently a sophomore at the University of Washington studying <span class="about-keyword">Statistics and Data Science</span> with a minor in business. My passions lie in statistics and programming and am looking for opportunities at the intersection of technology and business.<br><br>
-                I have achieved the Java SE 8 Programmer Oracle Certification by studying for and passing the <strong style="color:black"> <a href="https://drive.google.com/file/d/1JXsxTUVudGnqsbquzuPkIfFybqweMyvd/view" style="color: black;">Java SE Programmer I Exam (1Z0-808)</a></strong>. Along with this, I have experience in web development in <span class="about-keyword">HTML</span>, <span class="about-keyword">CSS</span>, and <span class="about-keyword">Javascript</span> as well as backend experience in <span class="about-keyword">Java</span> and <span class="about-keyword">Python</span>.<br><br>
-                As an avid sports fan throughout my life, I have developed a curiosity about applying <span class="about-keyword">data science</span> and <span class="about-keyword">machine learning</span> to real-life situations, whether it be to better understand and predict athletes' performance and help companies succeed in business. I am also <span class="about-keyword">American Red Cross</span> certified in Adult and Pediatric First Aid/CPR/AED.<br><br>
-                I am open to contributing and working on any projects in these fields. Please reach out if you have any questions or have opportunities in related industries!
+                I'm <span class="about-keyword">Arnav Palkhiwala</span>, a <span class="about-keyword">Data Science and Statistics</span> student at the <span class="about-keyword">University of Washington</span> (minor in Business Entrepreneurship), originally from San Diego.<br><br>
+                I've spent the past couple years building <span class="about-keyword">ML systems</span> and doing research I care about. At <span class="about-keyword">Contextual AI</span>, I optimized vLLM to improve production throughput by 30%+ on H100/B200 GPUs, work that showed up directly in pricing decisions and new customer contracts. At <span class="about-keyword">Qualcomm</span>, I pushed Gemma2's context window from 2k to 128k tokens for on-device Snapdragon inference. At <span class="about-keyword">Atomic</span>, I build agentic ML systems to surface commercially viable open-source projects. And through the UW InfoSeeking Lab, I published <span class="about-keyword">iAgentBench</span> at SIGIR 2026, a benchmark for how AI agents navigate fast-changing information environments.<br><br>
+                Outside of ML, I'm part of the <span class="about-keyword">UW Lavin Entrepreneurship Program</span>, where I co-founded AffordAid, a venture reducing medical equipment costs, and won the Dempsey Startup Competition. That experience is a big part of why I'm drawn to <span class="about-keyword">early-stage startups</span> and the intersection of applied AI and product. Always happy to chat if you're working on something interesting.
             </p>
         </div>
-        <div class="timeline-section">
-            <h2 class="timeline-heading"><span class="timeline-heading-accent">Work</span> Experience</h2>
+
+        <!-- Work Experience -->
+        <div class="timeline-section reveal">
+            <h2 class="timeline-heading"><span class="heading-accent">Work</span> Experience</h2>
             <div class="timeline">
 
-                <div class="timeline-item">
+                <div class="timeline-item reveal" data-delay="0">
                     <div class="timeline-dot"></div>
                     <div class="timeline-card">
                         <div class="timeline-card-top">
@@ -69,11 +68,11 @@
                                 <div class="timeline-role">Venture Open-Source Research Intern</div>
                             </div>
                         </div>
-                        <div class="timeline-desc">Building an automated ML scouting system to surface emerging open-source technologies with commercialization potential, analyzing ~40k repos weekly.</div>
+                        <div class="timeline-desc">Building an automated ML scouting system analyzing 40k+ repos weekly. Developing an agentic ranking and diligence workflow that combines market indicators, technical feasibility, and developer sentiment to surface commercially viable open-source projects.</div>
                     </div>
                 </div>
 
-                <div class="timeline-item">
+                <div class="timeline-item reveal" data-delay="100">
                     <div class="timeline-dot"></div>
                     <div class="timeline-card">
                         <div class="timeline-card-top">
@@ -90,7 +89,7 @@
                     </div>
                 </div>
 
-                <div class="timeline-item">
+                <div class="timeline-item reveal" data-delay="200">
                     <div class="timeline-dot"></div>
                     <div class="timeline-card">
                         <div class="timeline-card-top">
@@ -110,41 +109,97 @@
             </div>
         </div>
 
-        <div class="about-contact-btn-row">
-            <a href="contact.html" class="button contact-button">Reach Out</a>
+        <!-- Education -->
+        <div class="education-section reveal">
+            <h2 class="education-heading"><span class="heading-accent">Education</span></h2>
+            <div class="education-card">
+                <img src="https://www.google.com/s2/favicons?domain=uw.edu&sz=128" alt="UW logo" class="education-logo" onerror="this.style.display='none'">
+                <div class="education-info">
+                    <div class="education-school">University of Washington</div>
+                    <div class="education-degree">B.S. Data Science, Statistics | Minor in Business Entrepreneurship</div>
+                    <div class="education-date">GPA: 3.85 &nbsp;&middot;&nbsp; Dean's List &nbsp;&middot;&nbsp; Expected June 2027</div>
+                </div>
+            </div>
         </div>
-    </div>
+
+        <!-- Skills -->
+        <div class="skills-section reveal">
+            <h2 class="skills-heading"><span class="heading-accent">Technical</span> Skills</h2>
+            <div class="skills-card">
+                <div class="skills-grid">
+                    <div class="skills-row">
+                        <span class="skills-category">ML / AI</span>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">vLLM</span>
+                            <span class="skill-tag">LangChain</span>
+                            <span class="skill-tag">RAG</span>
+                            <span class="skill-tag">Ollama</span>
+                            <span class="skill-tag">Benchmarking</span>
+                        </div>
+                    </div>
+                    <div class="skills-row">
+                        <span class="skills-category">Stats</span>
+                        <div class="skills-tags">
+                            <span class="skill-tag">R</span>
+                            <span class="skill-tag">Statistical Modeling</span>
+                            <span class="skill-tag">Gaussian Processes</span>
+                        </div>
+                    </div>
+                    <div class="skills-row">
+                        <span class="skills-category">Web / Infra</span>
+                        <div class="skills-tags">
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">Firebase</span>
+                            <span class="skill-tag">Google Cloud</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                        </div>
+                    </div>
+                    <div class="skills-row">
+                        <span class="skills-category">Other</span>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="about-contact-btn-row reveal">
+            <a href="contact.html" class="button">Reach Out</a>
+        </div>
+
+    </main>
 
     <footer>
         <div class="footer-container">
             <div class="social-icons">
-                <a href="https://github.com/ArnavPalkhiwala" target="_blank">
-                    <img src="images/icons/github.png" alt="Github" width="60" height="60">
+                <a href="https://github.com/ArnavPalkhiwala" target="_blank" rel="noopener noreferrer" aria-label="Arnav on GitHub">
+                    <i class="fab fa-github"></i>
                 </a>
-
-                <div class="linkedin">
-                    <a href="https://www.linkedin.com/in/arnav-palkhiwala-a8927b212/" target="_blank">
-                        <img src="images/icons/linkedin.png" alt="Linkedin" width="50" height="50">
-                    </a>
-
-                </div>
-
-                <div target="_blank" style="padding-right: 10px">
-                    <a href="https://www.instagram.com/arnav__palkhiwala/" target="_blank">
-                        <img src="images/icons/instagram.jpg" alt="Instagram" width="60" height="60">
-                    </a>
-
-                </div>
-
-                <a class="mail" href=mailto:palkhiwala.arnav@gmail.com >
-                    <img src="images/icons/email.png" alt="E-Mail" class="move-left" width="50" height="60">
+                <a href="https://www.linkedin.com/in/arnav-palkhiwala-a8927b212/" target="_blank" rel="noopener noreferrer" aria-label="Arnav on LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
                 </a>
-
+                <a href="https://www.instagram.com/arnav__palkhiwala/" target="_blank" rel="noopener noreferrer" aria-label="Arnav on Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:palkhiwala.arnav@gmail.com" aria-label="Email Arnav">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
-            <p>&copy; 2023 Arnav Palkhiwala</p>
+            <p>&copy; 2026 Arnav Palkhiwala</p>
         </div>
     </footer>
 
+    <script src="animations.js"></script>
 </body>
 
 </html>

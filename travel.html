@@ -1,188 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Travel</title>
+    <title>Travel | Arnav Palkhiwala</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Travel photos by Arnav Palkhiwala | cities, nature, and great food from around the world.">
+    <meta property="og:title" content="Travel | Arnav Palkhiwala">
+    <meta property="og:description" content="Travel photos from around the world by Arnav Palkhiwala.">
+    <meta property="og:image" content="https://arnavpalkhiwala.com/images/me/me.jpg">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" type="text/css" href="travel-styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="images/me/ap-logo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/me/ap-logo.png">
 </head>
 
 <body>
     <header>
-        <nav>
-            <input type = "checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class = "fas fa-bars"></i>
+        <nav aria-label="Main navigation">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
             </label>
-            <label class="my-name" ><a href="index.html" style="color: black;">Arnav Palkhiwala </a></label>
+            <label class="my-name"><a href="index.html">Arnav Palkhiwala</a></label>
             <ul>
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="travel.html">Travel</a></li>
-                <li><a href="https://drive.google.com/file/d/1gHRV4Tcdj8FvJiKPPdYaKmbI7LFBAE8J/view?usp=sharing" target="_blank">Resume</a></li>
+                <li><a class="active" href="travel.html">Travel</a></li>
+                <li><a href="https://drive.google.com/file/d/1LsZClxZihLj1knwgl3SIkXcG1QeuuQm8/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
-    
             </ul>
         </nav>
-        </header>
+    </header>
 
     <div class="container">
-
-        <h1 class="intro-heading">
-
-            Travel
-
-        </h1>
-
-        <div class="image-container">
-            <img src="images/travel/extras/globe.jpg" alt="Arnav Palkhiwala">
-        </div>
-
+        <h1 class="intro-heading">Travel</h1>
         <p class="intro-paragraph">
-
-            I have been fortunate to travel to many amazing places around the world, and
-            I enjoy taking photos of cities, nature, and great food.
-            I hope to use this platform to capture these moments. I have only included recent trips (2019 and after).
+            I have been fortunate to travel to many amazing places around the world, and I enjoy taking photos of cities, nature, and great food. Only recent trips are included (2019 and after).
         </p>
-
-
     </div>
 
-    <h1 class="intro-heading" style="margin-bottom: -50px;">
-    
-        Denmark, Norway, Italy, England - Summer 2023
-    
-    </h1>
-    
-    <div class="slider">
-        <div class="img-box">
-            <img src="images/travel/s23/copenhagen1.jpeg" class="s23-slider-img">
-        </div>
-    
-        <button class="btn" onclick="s23prev()">Prev</button>
-        <button class="btn" onclick="s23next()">Next</button>
-    </div>
+    <main>
 
-    <h1 class="intro-heading" style="margin-bottom: -50px;">
-    
-        New York City - April 2023
-    
-    </h1>
-    
-    <div class="slider">
-        <div class="img-box">
-            <img src="images/travel/NewYork/wallstreet.jpg" class="ny-slider-img">
-        </div>
-    
-        <button class="btn" onclick="nyprev()">Prev</button>
-        <button class="btn" onclick="nynext()">Next</button>
-    </div>
+        <section class="trip-section" aria-label="Denmark, Norway, Italy, England - Summer 2023">
+            <h2 class="trip-heading">Denmark, Norway, Italy, England,Summer 2023</h2>
+            <div class="slider">
+                <div class="img-box">
+                    <img src="images/travel/s23/copenhagen1.jpeg" class="s23-slider-img" alt="Denmark, Norway, Italy, England 2023">
+                </div>
+                <button class="btn" onclick="s23prev()" aria-label="Previous Summer 2023 photo">Prev</button>
+                <button class="btn" onclick="s23next()" aria-label="Next Summer 2023 photo">Next</button>
+            </div>
+        </section>
 
-    <h1 class="intro-heading" style="margin-bottom: -50px;">
+        <section class="trip-section" aria-label="New York City - April 2023">
+            <h2 class="trip-heading">New York City,April 2023</h2>
+            <div class="slider">
+                <div class="img-box">
+                    <img src="images/travel/NewYork/wallstreet.jpg" class="ny-slider-img" alt="New York City 2023">
+                </div>
+                <button class="btn" onclick="nyprev()" aria-label="Previous New York photo">Prev</button>
+                <button class="btn" onclick="nynext()" aria-label="Next New York photo">Next</button>
+            </div>
+        </section>
 
-       Spain - November 2022
+        <section class="trip-section" aria-label="Spain - November 2022">
+            <h2 class="trip-heading">Spain,November 2022</h2>
+            <div class="slider">
+                <div class="img-box">
+                    <img src="images/travel/Spain/barcelona.jpeg" class="spain-slider-img" alt="Spain 2022">
+                </div>
+                <button class="btn" onclick="spainprev()" aria-label="Previous Spain photo">Prev</button>
+                <button class="btn" onclick="spainnext()" aria-label="Next Spain photo">Next</button>
+            </div>
+        </section>
 
-    </h1>
+        <section class="trip-section" aria-label="Austria, Hungary, Czechia - June 2022">
+            <h2 class="trip-heading">Austria, Hungary, Czechia,June 2022</h2>
+            <div class="slider">
+                <div class="img-box">
+                    <img src="images/travel/Summer2022/vienna.jpeg" class="s22-slider-img" alt="Austria, Hungary, Czechia 2022">
+                </div>
+                <button class="btn" onclick="s22prev()" aria-label="Previous Summer 2022 photo">Prev</button>
+                <button class="btn" onclick="s22next()" aria-label="Next Summer 2022 photo">Next</button>
+            </div>
+        </section>
 
-    <div class="slider">
-        <div class="img-box">
-            <img src="images/travel/Spain/barcelona.jpeg" class="spain-slider-img">
-        </div>
+        <section class="trip-section" aria-label="Italy - November 2021">
+            <h2 class="trip-heading">Italy,November 2021</h2>
+            <div class="slider">
+                <div class="img-box">
+                    <img src="images/travel/Italy/Fabro.jpeg" class="italy-slider-img" alt="Italy 2021">
+                </div>
+                <button class="btn" onclick="italyprev()" aria-label="Previous Italy photo">Prev</button>
+                <button class="btn" onclick="italynext()" aria-label="Next Italy photo">Next</button>
+            </div>
+        </section>
 
-        <button class="btn" onclick="spainprev()">Prev</button>
-        <button class="btn" onclick="spainnext()">Next</button>
-    </div>
+        <section class="trip-section" aria-label="Portugal, Spain, Morocco - 2019">
+            <h2 class="trip-heading">Portugal, Spain, Morocco,Nov/Dec 2019</h2>
+            <div class="slider">
+                <div class="img-box">
+                    <img src="images/travel/2019/1.jpeg" class="pre-slider-img" alt="Portugal, Spain, Morocco 2019">
+                </div>
+                <button class="btn" onclick="preprev()" aria-label="Previous 2019 travel photo">Prev</button>
+                <button class="btn" onclick="prenext()" aria-label="Next 2019 travel photo">Next</button>
+            </div>
+        </section>
 
-    <h1 class="intro-heading" style="margin-bottom: -50px;">
-
-        Austria, Hungary, Czechia - June 2022
- 
-     </h1>
- 
-     <div class="slider">
-         <div class="img-box">
-             <img src="images/travel/Summer2022/vienna.jpeg" class="s22-slider-img">
-         </div>
- 
-         <button class="btn" onclick="s22prev()">Prev</button>
-         <button class="btn" onclick="s22next()">Next</button>
-     </div>
-
-     <h1 class="intro-heading" style="margin-bottom: -50px;">
-
-        Italy - November 2021
- 
-     </h1>
- 
-     <div class="slider">
-         <div class="img-box">
-             <img src="images/travel/Italy/Fabro.jpeg" class="italy-slider-img">
-         </div>
- 
-         <button class="btn" onclick="italyprev()">Prev</button>
-         <button class="btn" onclick="italynext()">Next</button>
-     </div>
-
-     <h1 class="intro-heading" style="margin-bottom: -50px;">
-
-        Portugal, Spain, Morocco - November and December 2019
- 
-     </h1>
- 
-     <div class="slider">
-         <div class="img-box">
-             <img src="images/travel/2019/1.jpeg" class="pre-slider-img">
-         </div>
- 
-         <button class="btn" onclick="preprev()">Prev</button>
-         <button class="btn" onclick="prenext()">Next</button>
-     </div>
-
-
+    </main>
 
     <script src="travel-script.js"></script>
-
-    
-    
-      
-
-
-
-    </div>
+    <script src="animations.js"></script>
 
     <footer>
         <div class="footer-container">
             <div class="social-icons">
-                <a href="https://github.com/ArnavPalkhiwala" target="_blank">
-                    <img src="images/icons/github.png" alt="Github" width="60" height="60">
+                <a href="https://github.com/ArnavPalkhiwala" target="_blank" rel="noopener noreferrer" aria-label="Arnav on GitHub">
+                    <i class="fab fa-github"></i>
                 </a>
-
-                <div class="linkedin">
-                    <a href="https://www.linkedin.com/in/arnav-palkhiwala-a8927b212/" target="_blank">
-                        <img src="images/icons/linkedin.png" alt="Linkedin" width="50" height="50">
-                    </a>
-
-                </div>
-
-                <div target="_blank" style="padding-right: 10px">
-                    <a href="https://www.instagram.com/arnav__palkhiwala/" target="_blank">
-                        <img src="images/icons/instagram.jpg" alt="Instagram" width="60" height="60">
-                    </a>
-
-                </div>
-
-                <a class="mail" href=mailto:palkhiwala.arnav@gmail.com>
-                    <img src="images/icons/email.png" alt="E-Mail" class="move-left" width="50" height="60">
+                <a href="https://www.linkedin.com/in/arnav-palkhiwala-a8927b212/" target="_blank" rel="noopener noreferrer" aria-label="Arnav on LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
                 </a>
-
+                <a href="https://www.instagram.com/arnav__palkhiwala/" target="_blank" rel="noopener noreferrer" aria-label="Arnav on Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:palkhiwala.arnav@gmail.com" aria-label="Email Arnav">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
-            <p>&copy; 2023 Arnav Palkhiwala</p>
+            <p>&copy; 2026 Arnav Palkhiwala</p>
         </div>
     </footer>
 

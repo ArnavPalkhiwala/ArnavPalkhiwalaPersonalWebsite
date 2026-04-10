@@ -1,92 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Contact Arnav</title>
+    <title>Contact | Arnav Palkhiwala</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Arnav Palkhiwala | open to ML systems, research, and applied AI opportunities.">
+    <meta property="og:title" content="Contact | Arnav Palkhiwala">
+    <meta property="og:description" content="Get in touch with Arnav Palkhiwala.">
+    <meta property="og:image" content="https://arnavpalkhiwala.com/images/me/me.jpg">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" type="text/css" href="contact-styles.css" />
-    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="images/me/ap-logo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/me/ap-logo.png">
 </head>
 
 <body>
     <header>
-        <nav>
-            <input type = "checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class = "fas fa-bars"></i>
+        <nav aria-label="Main navigation">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
             </label>
-            <label class="my-name" ><a href="index.html" style="color: black;">Arnav Palkhiwala </a></label>
+            <label class="my-name"><a href="index.html">Arnav Palkhiwala</a></label>
             <ul>
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="https://drive.google.com/file/d/1LsZClxZihLj1knwgl3SIkXcG1QeuuQm8/view?usp=sharing" target="_blank">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-    
+                <li><a href="https://drive.google.com/file/d/1LsZClxZihLj1knwgl3SIkXcG1QeuuQm8/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
             </ul>
+        </nav>
     </header>
 
-    <script>
-        function delayNavigation(event) {
-            event.preventDefault();
-
-            setTimeout(function () {
-                window.location.href = event.target.href;
-            }, 250);
-        }
-    </script>
-
-
-    <div class="container">
-
-        <div class="contact-card">
-            <h1 class="contact-heading">
-               Contact Me!
-            </h1>
+    <main class="container">
+        <div class="contact-card reveal">
+            <h1 class="contact-heading">Get in Touch</h1>
             <p class="intro-paragraph">
-                I am open to contributing on any projects in <span class="contact-keyword">data science</span>, <span class="contact-keyword">machine learning</span>, technology, and business. Please reach out if you have any questions or have opportunities in related industries. I am active on <span class="contact-keyword">Github</span>, <span class="contact-keyword">LinkedIn</span>, <span class="contact-keyword">Instagram</span>, and <span class="contact-keyword">Email</span>, so check out my socials below!
+                Whether you have a role in mind, want to talk <span class="contact-keyword">ML and startups</span>, or just have something cool to share, I'm always happy to chat. Here's where to find me. Feel free to reach out!
             </p>
+
+            <div class="contact-links">
+                <a href="mailto:palkhiwala.arnav@gmail.com" class="contact-link-row">
+                    <i class="fas fa-envelope"></i>
+                    <span class="contact-link-label">Email</span>
+                </a>
+                <a href="https://www.linkedin.com/in/arnav-palkhiwala-a8927b212/" target="_blank" rel="noopener noreferrer" class="contact-link-row">
+                    <i class="fab fa-linkedin"></i>
+                    <span class="contact-link-label">LinkedIn</span>
+                </a>
+                <a href="https://github.com/ArnavPalkhiwala" target="_blank" rel="noopener noreferrer" class="contact-link-row">
+                    <i class="fab fa-github"></i>
+                    <span class="contact-link-label">GitHub</span>
+                </a>
+                <a href="https://drive.google.com/file/d/1LsZClxZihLj1knwgl3SIkXcG1QeuuQm8/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="contact-link-row">
+                    <i class="fas fa-file-alt"></i>
+                    <span class="contact-link-label">Resume</span>
+                </a>
+            </div>
         </div>
-
-    </div>
-
-
-    </div>
+    </main>
 
     <footer>
         <div class="footer-container">
             <div class="social-icons">
-                <a href="https://github.com/ArnavPalkhiwala" target="_blank">
-                    <img src="images/icons/github.png" alt="Github" width="60" height="60">
+                <a href="https://github.com/ArnavPalkhiwala" target="_blank" rel="noopener noreferrer" aria-label="Arnav on GitHub">
+                    <i class="fab fa-github"></i>
                 </a>
-
-                <div class="linkedin">
-                    <a href="https://www.linkedin.com/in/arnav-palkhiwala-a8927b212/" target="_blank">
-                        <img src="images/icons/linkedin.png" alt="Linkedin" width="50" height="50">
-                    </a>
-
-                </div>
-
-                <div target="_blank" style="padding-right: 10px">
-                    <a href="https://www.instagram.com/arnav__palkhiwala/" target="_blank">
-                        <img src="images/icons/instagram.jpg" alt="Instagram" width="60" height="60">
-                    </a>
-
-                </div>
-
-                <a class="mail" href=mailto:palkhiwala.arnav@gmail.com >
-                    <img src="images/icons/email.png" alt="E-Mail" class="move-left" width="50" height="60">
+                <a href="https://www.linkedin.com/in/arnav-palkhiwala-a8927b212/" target="_blank" rel="noopener noreferrer" aria-label="Arnav on LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
                 </a>
-
+                <a href="https://www.instagram.com/arnav__palkhiwala/" target="_blank" rel="noopener noreferrer" aria-label="Arnav on Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:palkhiwala.arnav@gmail.com" aria-label="Email Arnav">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
-            <p>&copy; 2023 Arnav Palkhiwala</p>
+            <p>&copy; 2026 Arnav Palkhiwala</p>
         </div>
     </footer>
 
+    <script src="animations.js"></script>
 </body>
 
 </html>

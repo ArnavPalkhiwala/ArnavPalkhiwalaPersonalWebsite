@@ -295,8 +295,8 @@ footer {
 
 .about-text {
   font-family: 'Inter', 'Open Sans', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 400;
+  font-size: 0.92rem;
+  font-weight: 350;
   color: var(--text-muted);
   line-height: 1.75;
   margin-bottom: 14px;

@@ -37,18 +37,38 @@
     <main class="about-center-layout">
 
         <!-- Profile -->
-        <img src="../images/me/me.jpg" alt="Arnav Palkhiwala" class="about-profile-pic-centered">
-        <h1 class="about-name-header">Arnav Palkhiwala</h1>
-        <p class="about-title-line">ML Systems &middot; AI Research &middot; Data Science</p>
+        <img src="../images/me/me.jpg" alt="Arnav Palkhiwala" class="about-profile-pic-centered reveal" data-delay="0">
+        <h1 class="about-name-header reveal" data-delay="100">Arnav Palkhiwala</h1>
+        <p class="about-title-line reveal" data-delay="150">ML Systems &middot; AI Research &middot; Data Science</p>
 
         <!-- Bio -->
         <div class="about-card reveal">
-            <p class="about-text">
-                I'm <span class="about-keyword">Arnav Palkhiwala</span>, a <span class="about-keyword">Data Science and Statistics</span> student at the <span class="about-keyword">University of Washington</span> (minor in Business Entrepreneurship), originally from San Diego.<br><br>
-                I've spent the past couple years building <span class="about-keyword">ML systems</span> and doing research I care about. At <span class="about-keyword">Contextual AI</span>, I optimized vLLM to improve production throughput by 30%+ on H100/B200 GPUs, work that showed up directly in pricing decisions and new customer contracts. At <span class="about-keyword">Qualcomm</span>, I pushed Gemma2's context window from 2k to 128k tokens for on-device Snapdragon inference. At <span class="about-keyword">Atomic</span>, I build agentic ML systems to surface commercially viable open-source projects. And through the UW InfoSeeking Lab, I published <span class="about-keyword">iAgentBench</span> at SIGIR 2026, a benchmark for how AI agents navigate fast-changing information environments.<br><br>
-                I'm also a part of the <span class="about-keyword">UW Lavin Entrepreneurship Program</span>, where I co-founded AffordAid, a venture reducing medical equipment costs, and won the Dempsey Startup Competition. That experience is a big part of why I'm drawn to <span class="about-keyword">early-stage startups</span> and the intersection of applied AI and product. Always happy to chat if you're working on something interesting.<br><br>
-                Outside of technology, I'm into sports, trying new restaurants, and playing the guitar. Reach out if any of that sounds exciting!
-            </p>
+            <p class="about-lede">Originally from San Diego, I'm a third-year <span class="hl">Data Science and Statistics</span> student at the <span class="hl">University of Washington</span> (Seattle).</p>
+            <p class="about-text">I've spent the past few years building ML systems, focusing on optimizing LLM inference and infrastructure in production.  I'm especially drawn to <span class="hl">early-stage startups</span> solving real problems.</p>
+        </div>
+
+        <!-- Stats -->
+        <div class="about-stats reveal" data-delay="50">
+            <div class="about-stat">
+                <span class="stat-number">30%+</span>
+                <span class="stat-label">Production Throughput</span>
+                <span class="stat-context">Contextual AI</span>
+            </div>
+            <div class="about-stat">
+                <span class="stat-number">128k</span>
+                <span class="stat-label">Context Window Extension</span>
+                <span class="stat-context">Qualcomm</span>
+            </div>
+            <div class="about-stat">
+                <span class="stat-number">SIGIR</span>
+                <span class="stat-label">Published '26</span>
+                <span class="stat-context">UW InfoSeeking Lab</span>
+            </div>
+            <div class="about-stat">
+                <span class="stat-number">#1</span>
+                <span class="stat-label">Startup Competition</span>
+                <span class="stat-context">Dempsey @ UW</span>
+            </div>
         </div>
 
         <!-- Work Experience -->
@@ -133,11 +153,14 @@
                         <div class="skills-tags">
                             <span class="skill-tag">Python</span>
                             <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">Agentic Systems</span>
                             <span class="skill-tag">vLLM</span>
                             <span class="skill-tag">LangChain</span>
                             <span class="skill-tag">RAG</span>
                             <span class="skill-tag">Ollama</span>
+                            <span class="skill-tag">Production LLMInference</span>
                             <span class="skill-tag">Benchmarking</span>
+
                         </div>
                     </div>
                     <div class="skills-row">
@@ -145,6 +168,7 @@
                         <div class="skills-tags">
                             <span class="skill-tag">R</span>
                             <span class="skill-tag">Statistical Modeling</span>
+                            <span class="skill-tag">Statistical Inference</span>
                             <span class="skill-tag">Gaussian Processes</span>
                         </div>
                     </div>
@@ -167,6 +191,9 @@
                         <div class="skills-tags">
                             <span class="skill-tag">Java</span>
                             <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Linux</span>
+                            <span class="skill-tag">Bash</span>
+                            <span class="skill-tag">Shell</span>
                         </div>
                     </div>
                 </div>
@@ -175,6 +202,7 @@
 
         <!-- CTA -->
         <div class="about-contact-btn-row reveal">
+            <p class="about-personal">Outside of work I'm into sports, restaurants, and guitar. Always happy to connect!</p>
             <a href="/contact" class="button">Reach Out</a>
         </div>
 

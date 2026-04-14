@@ -358,6 +358,31 @@ footer {
     text-wrap: balance;
   }
 
+  .company {
+    color: var(--text);
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .company::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, var(--blue), var(--mint));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .company:hover::after {
+    transform: scaleX(1);
+  }
+
   .button-container {
     display: flex;
     justify-content: center;
@@ -477,6 +502,32 @@ footer {
     display: inline-block;
     opacity: 0;
     animation: word-fade-in 0.5s ease-in-out 0.4s forwards;
+  }
+
+  /* Company name callouts */
+  .company {
+    color: var(--text);
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .company::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, var(--blue), var(--mint));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .company:hover::after {
+    transform: scaleX(1);
   }
 
   /* Gradient name */

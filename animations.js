@@ -104,4 +104,36 @@
   attachSpotlight('.about-card');
   attachSpotlight('.contact-card');
 
+  /* ============================================================
+     NAV — HAMBURGER ↔ X + TAP OUTSIDE TO CLOSE
+     ============================================================ */
+
+  var navCheck = document.getElementById('check');
+  var checkIcon = document.querySelector('.checkbtn i');
+  var navMenu = document.querySelector('nav ul');
+
+  if (navCheck && checkIcon) {
+    navCheck.addEventListener('change', function () {
+      if (navCheck.checked) {
+        checkIcon.classList.remove('fa-bars');
+        checkIcon.classList.add('fa-times');
+      } else {
+        checkIcon.classList.remove('fa-times');
+        checkIcon.classList.add('fa-bars');
+      }
+    });
+  }
+
+  if (navCheck && navMenu) {
+    navMenu.addEventListener('click', function (e) {
+      if (e.target === navMenu) {
+        navCheck.checked = false;
+        if (checkIcon) {
+          checkIcon.classList.remove('fa-times');
+          checkIcon.classList.add('fa-bars');
+        }
+      }
+    });
+  }
+
 })();

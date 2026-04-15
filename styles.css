@@ -36,6 +36,13 @@ body {
   padding: 0;
   background-color: var(--bg);
   color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-container {
+  flex: 1;
 }
 
 /* ============================================================
@@ -301,10 +308,57 @@ footer {
 }
 
 /* ============================================================
-   HOMEPAGE HERO — MOBILE / TABLET  (< 1150px)
+   HIGHLIGHT & COMPANY — GLOBAL (all breakpoints)
    ============================================================ */
 
-@media (max-width: 1149px) {
+.mobile-startup {
+  display: none;
+}
+
+@media (max-width: 899px) {
+  .mobile-startup {
+    display: inline;
+  }
+}
+
+.highlight {
+  background: linear-gradient(90deg, var(--blue), var(--mint));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.company {
+  color: var(--text);
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.company::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, var(--blue), var(--mint));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.company:hover::after {
+  transform: scaleX(1);
+}
+
+
+/* ============================================================
+   HOMEPAGE HERO — MOBILE  (< 768px)
+   ============================================================ */
+
+@media (max-width: 899px) {
   .page-container {
     display: flex;
     flex-direction: column;
@@ -314,19 +368,25 @@ footer {
 
   .introduction {
     text-align: center;
+    animation: fade-up 0.5s ease-out 0.1s both;
   }
 
   .intro-text {
     font-family: 'Inter', 'Open Sans', sans-serif;
+    font-size: clamp(36px, 11vw, 56px);
     font-weight: 900;
     color: var(--text);
     margin-top: 20px;
     text-align: center;
   }
 
+  .image-container {
+    animation: fade-up 0.5s ease-out 0s both;
+  }
+
   .me {
-    width: 220px;
-    height: 220px;
+    width: clamp(160px, 48vw, 300px);
+    height: clamp(160px, 48vw, 300px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -344,84 +404,48 @@ footer {
   }
 
   .paragraph-container {
-    margin-top: 24px;
+    margin-top: 20px;
     text-align: center;
-    max-width: 90%;
+    max-width: 92%;
+    animation: fade-up 0.5s ease-out 0.2s both;
   }
 
   .intro-paragraph {
     font-family: 'Inter', 'Open Sans', sans-serif;
-    font-size: 18px;
-    color: var(--text-muted);
-    line-height: 1.7;
-    text-align: center;
-    text-wrap: balance;
-  }
-
-  .company {
+    font-size: 17px;
     color: var(--text);
-    font-weight: 600;
-    position: relative;
-    display: inline-block;
-    white-space: nowrap;
+    line-height: 1.65;
+    text-align: center;
   }
 
-  .company::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    width: 100%;
-    height: 1px;
-    background: linear-gradient(90deg, var(--blue), var(--mint));
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-
-  .company:hover::after {
-    transform: scaleX(1);
+  .intro-paragraph-2 {
+    display: none;
   }
 
   .button-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 24px;
+    gap: 10px;
+    margin-top: 20px;
     padding-bottom: 20px;
+    animation: fade-up 0.5s ease-out 0.3s both;
   }
 
-  .button {
-    font-size: 15px;
-    padding: 12px 26px;
-    margin: 0;
-  }
-
+  .button,
   .btn-outline {
     font-size: 15px;
-    padding: 12px 26px;
+    padding: 11px 22px;
+    margin: 0;
   }
 }
 
-@media (max-width: 480px) {
-  .intro-text {
-    font-size: 44px;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 1149px) {
-  .intro-text {
-    font-size: 56px;
-  }
-}
 
 /* ============================================================
-   HOMEPAGE HERO — DESKTOP  (>= 1150px)
-   Two-column grid: text left, image right
+   HOMEPAGE HERO — TWO-COLUMN  (>= 768px, fluid via clamp)
    ============================================================ */
 
-@media (min-width: 1150px) {
+@media (min-width: 900px) {
   .page-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -429,8 +453,8 @@ footer {
     align-items: center;
     max-width: 1300px;
     margin: 0 auto;
-    padding: 60px 60px 80px;
-    gap: 0 40px;
+    padding: clamp(30px, 4vw, 60px) clamp(24px, 5vw, 60px) clamp(40px, 5vw, 80px);
+    gap: 0 clamp(16px, 3vw, 40px);
     position: relative;
   }
 
@@ -477,13 +501,17 @@ footer {
     z-index: 1;
   }
 
+  .cred-strip {
+    display: none;
+  }
+
   .button-container {
     grid-column: 1;
     grid-row: 3;
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
-    padding-top: 20px;
+    padding-top: clamp(14px, 1.5vw, 20px);
     animation: slide-in 0.6s ease-out 0.25s both;
     position: relative;
     z-index: 1;
@@ -491,59 +519,19 @@ footer {
 
   .intro-text {
     font-family: 'Inter', 'Open Sans', sans-serif;
-    font-size: 64px;
+    font-size: clamp(52px, 4.5vw, 64px);
     font-weight: 900;
     color: var(--text);
     margin-top: 0;
     line-height: 1.1;
   }
 
-  .intro-text h1 span {
-    display: inline-block;
-    opacity: 0;
-    animation: word-fade-in 0.5s ease-in-out 0.4s forwards;
-  }
-
-  /* Company name callouts */
-  .company {
-    color: var(--text);
-    font-weight: 600;
-    position: relative;
-    display: inline-block;
-    white-space: nowrap;
-  }
-
-  .company::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    width: 100%;
-    height: 1px;
-    background: linear-gradient(90deg, var(--blue), var(--mint));
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-
-  .company:hover::after {
-    transform: scaleX(1);
-  }
-
-  /* Gradient name */
-  .highlight {
-    background: linear-gradient(90deg, var(--blue), var(--mint));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
   .me {
-    width: 380px;
-    height: 380px;
+    width: clamp(300px, 26vw, 380px);
+    height: clamp(300px, 26vw, 380px);
     overflow: hidden;
     border-radius: 50%;
-    box-shadow: 0 0 0 3px var(--border-strong), 0 0 60px rgba(132,181,232,0.2);
+    box-shadow: 0 0 0 3px var(--border-strong), 0 0 clamp(30px, 4vw, 60px) rgba(132,181,232,0.2);
     animation: slide-in-image 0.7s ease-out 0.1s both;
   }
 
@@ -555,40 +543,28 @@ footer {
 
   .intro-paragraph {
     font-family: 'Inter', 'Open Sans', sans-serif;
-    font-size: 18px;
-    color: var(--text-muted);
+    font-size: clamp(16px, 1.45vw, 18px);
+    color: var(--text);
     line-height: 1.75;
-    max-width: 520px;
-    margin-top: 20px;
-    text-wrap: balance;
+    margin-top: clamp(14px, 1.5vw, 20px);
+  }
+
+  .intro-paragraph-2 {
+    color: var(--text-muted);
+  }
+
+  .intro-paragraph-2 {
+    margin-top: clamp(10px, 1.2vw, 16px);
   }
 
   .button {
-    font-size: 16px;
-    padding: 13px 30px;
+    font-size: clamp(14px, 1.2vw, 16px);
+    padding: clamp(11px, 1vw, 13px) clamp(22px, 2.2vw, 30px);
   }
 
   .btn-outline {
-    font-size: 16px;
-    padding: 12px 30px;
-  }
-
-  .about-button,
-  .contact-button {
-    margin: 0;
-  }
-}
-
-@media (min-width: 1150px) and (max-width: 1399px) {
-  .intro-text {
-    font-size: 52px;
-  }
-  .me {
-    width: 300px;
-    height: 300px;
-  }
-  .intro-paragraph {
-    font-size: 17px;
+    font-size: clamp(14px, 1.2vw, 16px);
+    padding: clamp(10px, 1vw, 12px) clamp(22px, 2.2vw, 30px);
   }
 }
 
@@ -608,10 +584,16 @@ footer {
 }
 
 .cred-strip {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 22px;
+}
+
+@media (max-width: 899px) {
+  .cred-strip {
+    display: flex;
+  }
 }
 
 .cred-item {
@@ -633,9 +615,10 @@ footer {
   font-size: 11px;
 }
 
-@media (max-width: 1149px) {
+@media (max-width: 899px) {
   .cred-strip {
     justify-content: center;
+    margin-top: 18px;
   }
 }
 
@@ -661,6 +644,11 @@ footer {
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50%       { transform: translateY(-12px); }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 /* ============================================================

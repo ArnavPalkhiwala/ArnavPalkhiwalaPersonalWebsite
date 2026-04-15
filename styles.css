@@ -373,7 +373,7 @@ footer {
 
   .intro-text {
     font-family: 'Inter', 'Open Sans', sans-serif;
-    font-size: clamp(36px, 11vw, 56px);
+    font-size: clamp(32px, 10vw, 52px);
     font-weight: 900;
     color: var(--text);
     margin-top: 4px;

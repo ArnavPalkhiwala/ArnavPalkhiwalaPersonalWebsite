@@ -257,7 +257,7 @@ footer {
 
 .top-section {
   background: linear-gradient(160deg, var(--bg) 0%, var(--bg-surface) 100%);
-  padding: 64px 0 52px 0;
+  padding: 80px 0 64px 0;
   border-bottom: 1px solid var(--border);
   position: relative;
   overflow: hidden;
@@ -266,12 +266,24 @@ footer {
 .top-section::before {
   content: '';
   position: absolute;
-  top: -40px;
+  top: -60px;
   left: 50%;
   transform: translateX(-50%);
-  width: 700px;
-  height: 400px;
-  background: radial-gradient(ellipse, rgba(132,181,232,0.1) 0%, transparent 70%);
+  width: 900px;
+  height: 500px;
+  background: radial-gradient(ellipse, rgba(132,181,232,0.18) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.top-section::after {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 300px;
+  background: radial-gradient(ellipse, rgba(160,248,196,0.07) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -352,7 +364,42 @@ footer {
   font-family: 'Inter', 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
+}
+
+.header-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 8px 0 14px;
+}
+
+.header-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: 'Inter', 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--text);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-strong);
+  border-radius: 24px;
+  padding: 9px 18px;
+  transition: color 0.2s, border-color 0.2s, background 0.2s, box-shadow 0.2s;
+}
+
+.header-tag:hover {
+  border-color: var(--mint);
+  color: var(--mint);
+  box-shadow: 0 0 12px rgba(160,248,196,0.12);
+}
+
+.header-tag i {
+  color: var(--blue);
+  font-size: 12px;
 }
 
 .github-pill {

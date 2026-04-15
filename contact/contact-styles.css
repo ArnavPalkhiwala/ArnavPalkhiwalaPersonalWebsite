@@ -453,6 +453,24 @@ footer {
   transform: translateY(0);
 }
 
+/* Heading — slide from left */
+.contact-heading.reveal {
+  transform: translateX(-28px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.contact-heading.reveal.visible {
+  transform: translateX(0);
+}
+
+/* Each link row — slide from left */
+.contact-link-row.reveal {
+  transform: translateX(-24px);
+  transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.contact-link-row.reveal.visible {
+  transform: translateX(0);
+}
+
 /* ============================================================
    CARD SPOTLIGHT
    ============================================================ */
